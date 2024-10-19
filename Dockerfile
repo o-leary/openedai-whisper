@@ -9,7 +9,6 @@ COPY requirements.txt /app/
 RUN pip install -r requirements.txt
 COPY *.py /app/
 
-ARG CLI_ARGS=""
 RUN <<EOF
 git clone https://github.com/rhasspy/wyoming-faster-whisper.git
 cd wyoming-faster-whisper
@@ -17,4 +16,4 @@ script/setup
 cd ..
 EOF
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-CMD python whisper.py $CLI_ARGS
+CMD python whisper.py
