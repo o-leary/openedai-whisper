@@ -11,7 +11,7 @@ services:
     env_file:
       - whisper.env
     ports:
-      - "8000:8000"
+      - "8001:8001"
     volumes:
       - ./hf_home:/app/hf_home
     runtime: nvidia
