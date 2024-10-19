@@ -16,4 +16,4 @@ script/setup
 cd ..
 EOF
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-CMD python whisper.py
+CMD bash startup.sh
