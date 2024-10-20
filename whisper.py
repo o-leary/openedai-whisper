@@ -131,7 +131,7 @@ def parse_args(argv=None):
         description='OpenedAI Whisper API Server',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('-m', '--model', action='store', default="openai/whisper-large-v2", help="The model to use for transcription. Ex. distil-whisper/distil-medium.en")
+    parser.add_argument('-m', '--model', action='store', default="openai/whisper-tiny.en", help="The model to use for transcription. Ex. distil-whisper/distil-medium.en")
     parser.add_argument('-d', '--device', action='store', default="auto", help="Set the torch device for the model. Ex. cuda:1")
     parser.add_argument('-t', '--dtype', action='store', default="auto", help="Set the torch data type for processing (float32, float16, bfloat16)")
     parser.add_argument('-P', '--port', action='store', default=8000, type=int, help="Server tcp port")
