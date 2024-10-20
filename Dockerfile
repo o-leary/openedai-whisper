@@ -7,7 +7,7 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY requirements.txt /app/
 RUN pip install -r requirements.txt
-COPY *.py /app/
+COPY *.py *.sh /app/
 
 RUN <<EOF
 git clone https://github.com/rhasspy/wyoming-faster-whisper.git
