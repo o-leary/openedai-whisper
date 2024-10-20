@@ -1,7 +1,7 @@
 OpenedAI Whisper
 ----------------
 
-Modified to also install wyoming-faster-whisper which use the less retrictive MIT licence.
+Modified to also install wyoming-faster-whisper which use the less retrictive MIT licence. Changed to default to openai/whisper-tiny.en.
 
 An OpenAI API compatible speech to text server for audio transcription and translations, aka. Whisper.
 
