@@ -16,6 +16,7 @@ services:
     volumes:
       - ./hf_home:/app/hf_home
     runtime: nvidia
+    restart: unless-stopped
     deploy:
       resources:
         reservations:
